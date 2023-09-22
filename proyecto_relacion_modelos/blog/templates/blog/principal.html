@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autores</title>
+</head>
+<body>
+    <h2> Lista de autores</h2>
+    <ol>
+    {% for autor in autores %}
+        <li><a href="entradas/{{ autor.nombre }}">{{ autor.nombre }}</a></li><br>
+    {% endfor %}
+    </ol>
+</body>
+</html>
